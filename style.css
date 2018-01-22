@@ -140,8 +140,9 @@ img {vertical-align: middle;}
 
 .slideshow-container1 {
 	display: block;
-	top: 50%;
+	top: 60px;
 	left: 50%
+	width: 50%;
 	max-width: 1000px;
   	position: relative;
 	margin:0px 5px 5px 5px;
