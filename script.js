@@ -6,23 +6,27 @@ function showSlides() {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
+        slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
+    if (slideIndex > slides.length) { slideIndex = 1 }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1] += " active";
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1] += " active";
     setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
-function goBack(){
+function goBack() {
     history.back();
-    
+
 }
 
-function popup(){
+function pop() {
+    alert("Hello this is my webpage that I had to do in school. Many of the pages are not programed because I was not required to")
+}
+
+function popup() {
     alert("ERROR 404. Please go back to previous page")
 }
