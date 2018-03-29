@@ -1,166 +1,96 @@
 body {
-	font: 15px arial, helvetica, sans-serif;
-	background: #2C498B;
-
+    margin: 0;
+    background-color: #C6E98E;
 }
-
-
-nav{
-		display: inline;
-		background-color: #efe5d0;
-		margin: 10px 10px 0px 10px;
-		padding-left: auto;
-		padding-right: auto;
-		text-align: center;		
-		font-style: none;
-		text-decoration: none;
-}
-#container{
-	display: table;
-	border-spacing: 10px;
-}	
-#tablerow{
-	display: table-row;
-
-}
-#firstcoll{
-	display: table-cell;
-	background-color:  #45609E;
-	color: #C4D0ED;
-	font-size: 100%;
-	padding: 15px;
-	width: 20%;
-	margin: 0px 10px 10px 10px;	
-	vertical-align: top;
-	text-align: left;
-	
-	
-}
-#suprafirstcoll{
-	
-	display: table-cell;
-	background-color:  #45609E;
-	color: #C4D0ED;
-	font-size: 100%;
-	padding: 15px;
-	top: 20%;
-	width: 40%;
-	margin: 0px 10px 10px 10px;	
-	vertical-align: top;
-	text-align: left;
-	
-	
-}
-#main{
-	display: table-cell;
-	background-color: #45609E;
-	width: 100px;
-	color: #C4D0ED;
-	font-size: 100%;
-	padding: 15px;
-	margin: 0px 10px 10px 10px;
-	vertical-align: top;
-	text-align: justify;
-
-}
-#thirdcoll{
-	display: table-cell;
-	background-color:  #45609E;
-	color: #C4D0ED;
-	font-size: 100%;
-	padding: 15px;
-	width: 20%;
-	margin: 0px 10px 10px 10px;	
-	vertical-align: top;
-	text-align: left;
-	
-}
-
-a {
-	color: #C4D0ED;
-	text-decoration: none;
+h1{
+    text-align: center;
 }
 
 ul {
-	padding: 0;
-	margin: 0;
-	background: #45609E;
-	float: left;
-	text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 18%;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
-li {
-	float: left;
-	display: inline;
-	position: relative;
-	width: 150px;
-	list-style: none;
-text-decoration: none;
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 
-ul ul {
-	position: absolute;
-	left: 0;
-	top: 100%;
-	background: #92A6D5;
-	display: none;
-	text-decoration: none;
+li a.active {
+    background-color:#EE9CCE;
+    color: white;
 }
 
-ul ul ul {
-	left: 100%;
-	top: 0;
-	background: black;	 
-	text-decoration: none;
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
 
-li:hover > ul {
-	display: block;
+#main{
+    margin-left:18%;
+    padding:1px 16px;
+    height:1000px;
 }
 
-p {
-	clear: left;
-	padding-top: 1em;
-}
-
-* {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-	display: table-cell;
-	right: 5px;
-	top: 60px;
-	max-width: 50%;
-  	position: relative;
-	margin:0px 5px 5px 5px;
-	padding: 5px;
+  max-width: 1000px;
+  max-height: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.slideshow-container1 {
-	display: block;
-	top: 60px;
-	left: 50%
-	width: 50%;
-	max-width: 1000px;
-  	position: relative;
-	margin:0px 5px 5px 5px;
-	padding: 5px;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
 /* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: relative;
+  position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
 }
 
-/* Number text (1/5 etc) */
+/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -171,91 +101,39 @@ img {vertical-align: middle;}
 
 /* The dots/bullets/indicators */
 .dot {
+  cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
-  display: block;
-  transition: background-color 1s ease;
-}
-.dot1 {
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 1s ease;
-  }
-
-
-  .active {
-	background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-  }
-  
-  @keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-	.text {font-size: 11px}
-  }
-
-#click{
-	width: 150px;
-	height: 40px;
-	font-size: 30px;
-	background-color: #92A6D5;
-	border: none;
-	color: white;
-	text-decoration: none;
-	text-align: center;
-}
-#click:hover{
-	background-color: #45609E;
-	color: #92A6D5;
-}
-#construction{
-
-		position: absolute;
-		width: 300px;
-		height: 200px;
-		z-index: 15;
-		top: 400px;
-		left: 650px;
-		background: #2C498B;
-	  }
-#towTruck{
-	position: absolute;
-	width: 300px;
-	height: 200px;
-	z-index: 15;
-	left: 350px;
-	background: #2C498B;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-#footer {
-	background-color: #45609E;
-	color: #C4D0ED;
-	text-align: center;
-	padding: 15px;
-	margin: 10px;
-	font-size: 90%;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
