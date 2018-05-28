@@ -1,10 +1,15 @@
 var mycanvas = document.getElementById('mycanvas');
 var ctx = mycanvas.getContext('2d');
+var coinSound = document.getElementById("coinSound");
+
 var snakeSize = 10;
 var w = 350;
 var h = 350;
 var score = 0;
 var snake;
+var soundFlag = true;
+
+
 
 var food;
 
@@ -21,7 +26,7 @@ var drawModule = (function () {
 
     var pizza = function (x, y) {
         // this is the border of the pizza
-        ctx.fillStyle = 'yellow';
+        ctx.fillStyle = 'blue';
         ctx.fillRect(x * snakeSize, y * snakeSize, snakeSize, snakeSize);
         // this is the singel square
         ctx.fillStyle = 'red';
@@ -37,7 +42,7 @@ var drawModule = (function () {
 
     var drawSnake = function () {
         //the initall snake will have 5 square
-        var length = 5;
+        var length = 1;
         snake = [];
         // Using a for loop we push the 5 elements inside the array(squares).
         // Every element will have x = 0 and the y will take the value of the index.
@@ -65,13 +70,15 @@ var drawModule = (function () {
    */
 
         if (direction == 'right') {
-            snakeX++;
+            snakeX++;              
         }
         else if (direction == 'left') {
             snakeX--;
         }
+
         else if (direction == 'up') {
             snakeY--;
+
         } else if (direction == 'down') {
             snakeY++;
         }
@@ -95,9 +102,18 @@ var drawModule = (function () {
         //If the snake eats food it becomes longer and this means that, in this case, you shouldn't pop out the last element of the array.
         if (snakeX == food.x && snakeY == food.y) {
             var tail = { x: snakeX, y: snakeY }; //Create a new head instead of moving the tail
-            score++;
-
+            score++;            
+        
+            if (soundFlag) {
+                coinSound.pause();
+                coinSound.currentTime = 0;
+                coinSound.play();
+                soundFlag = false;
+            }
+            
             createFood(); //Create new food
+
+           
         } else {
             var tail = snake.pop(); //pops out the last cell
             tail.x = snakeX;
@@ -115,7 +131,7 @@ var drawModule = (function () {
         //put the score text
         scoreText();
     }
-
+    
     var createFood = function () {
         food = {
             // generate random coordinates
@@ -149,6 +165,8 @@ var drawModule = (function () {
         drawSnake();
         createFood();
         gameloop = setInterval(paint, 80);
+         
+      
     }
 
     //run init at end of module

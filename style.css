@@ -7,22 +7,23 @@
     background-position: center center;
     padding: 0;
     margin: 03;
+    left: 50%;
 
   }
   
   button {
-    background-color: green;
+    background-color: black;
     color: white;
     border: none;
     bottom: 0;
     height: 30px;
     font-size: 12pt;
-    float: left;
     width: 90px;
     margin: 10px 0 0 0;
   }
   button:hover {
     background-color: orange;
+    color: black;
   }
 
   button:disabled {
@@ -34,7 +35,7 @@
     font-weight: bold;
     width: 250px;
     margin: 18px 0 5px 8px;
-    float: left;
+    
   }
 
   .game {
