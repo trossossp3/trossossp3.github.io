@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html>
-<title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<!--
-<body>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+<body onload="loadImages();">
 
 
-    <div class="navbar">
-        <div class="dropdown">
-            <button class="dropbtn">Math
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="functionalArt.html">Functional Art</a>
-                <a href="DominoProject.htm">Dominos Project</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Accounting 
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Compuer Science
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-    </div>
+
+<select id ="guess"> 
+    <option value="14">Ace</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">Jack</option>
+    <option value="13">King</option>
+    <option value="12">Queen</option>
+
+  </select> 
+  <select id ="person"> 
+    <option value="1">CP1</option>
+    <option value="2">CP2</option>
+    <option value="3">CP3</option>
+
+  </select> 
+<button onclick ="doIt()" id="k">Start</button>
+<button onclick ="doItt()" id="killMe">Start Turn</button>
+<canvas id="myCanvas" width="1500" height="800">
+  Your browser does not support the HTML5 canvas tag.</canvas>
+ <script src="script.js"></script> 
+
 </body>
--->
-
 </html>

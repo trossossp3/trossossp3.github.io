@@ -1,67 +1,59 @@
-.navbar {
-    overflow: hidden;
-    background-color: #EE8EC4;
-    font-family: Arial, Helvetica, sans-serif;
+canvas{
+    
+    border:10px solid #660066;
+    background-repeat: repeat;
+    background-position: 50%;
+    background-size: 80px;
+    background-image: url('kevin.png');
 }
-
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #60D38F;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 body{
-    background-color: black;
+    background-color: #3f4d5a;
+    text-align: center;
+    background-repeat: repeat;
+    background-position: 50%;
+    background-size: 200px;
+    background-image: url('kevin.png');
+}
+#k{
+    background-color: #3f4d5a; /* Green */
+    border: 2px, white;
     color: white;
-    font: 10;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 
 }
+#killMe{
+    background-color: #3f4d5a; /* Green */
+    border: 2px, white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#person{
+    background-color: #3f4d5a; /* Green */
+    border: 2px, white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#guess{
+    background-color: #3f4d5a; /* Green */
+    border: 2px, white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
