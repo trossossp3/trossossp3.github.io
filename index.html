@@ -1,20 +1,47 @@
----
-layout: default
-title: Hank Quinlan, Horrible Cop
----
-<div class="blurb">
-	<h1>Add element</h1>
-	<form action="test.html">
-		<label for="fname">Product</label>
-		<input type="text" id=""><br>
-		<label for="lname">Date Ingested</label>
-		<input type="date" id="lname" name="lname"><br>
-		<label for="fname">Ingest Location</label>
-		<input type="text" id="sa"><br>
-		<label for="lname">Destination</label>
-		<input type="text" id=""><br>
-		<input type="submit" value="Go to Google" />
-	  </form> 
 
-	 
 </div><!-- /.blurb -->
+<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/style.css">
+		</head>
+		<body>
+<!-- 			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+	        		<li><a href="/cv">CV</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav> -->
+			<div class="container">
+			
+			
+			<div class="blurb">
+				<h1>Add Item</h1>
+				<form action="submit.html">
+					<label for="fname">Product</label>
+					<input type="text" id="txt">
+
+
+					<label for="lname">Date Ingested</label>
+					<input type="date" id="txt" name="lname"><br>
+					<label for="fname">Ingest Location</label>
+					<input type="text" id="txt"><br>
+					<label for="lname">Destination</label>
+					<input type="text" id="txt"><br><br>
+					<input type="submit" value="Submit" />
+				  </form> 
+			
+				 
+			</div><!-- /.container -->
+<!-- 			<footer>
+	    		<ul>
+	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
+				</ul> -->
+<!-- 			</footer> -->
+			<script src = "/js/script.js"></script>
+		</body>
+	</html>
